@@ -4,10 +4,8 @@ const formData = {
 };
 
 const feedbackForm = document.querySelector('.feedback-form');
-const emailInput = document.querySelector('.feedback-form > label > input');
-const messageInput = document.querySelector(
-  '.feedback-form > label > textarea'
-);
+const emailInput = document.querySelector('input[name="email"]');
+const messageInput = document.querySelector('textarea[name="message"]');
 
 const storedData = localStorage.getItem('feedback-form-state');
 if (storedData) {
